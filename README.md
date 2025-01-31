@@ -1,7 +1,7 @@
 AI-Powered Code Reviewer
 Welcome to the AI-Powered Code Review Bot! This simple yet powerful web application allows you to upload your code files, analyze them using advanced AI models, and receive a quality score along with detailed suggestions for improvement. The bot evaluates your code for various factors such as efficiency, readability, security, complexity, and error handling to help you improve your coding skills.
 
-Features
+Features:-
 
 File Upload System: Upload Python, JavaScript, or C++ files for analysis.
 
@@ -28,7 +28,7 @@ Minimalistic UI: The frontend uses basic HTML, CSS, and JavaScript, making it ea
 Fast Backend: Built with Flask, leveraging the OpenAI API  for code analysis.
 
 
-Tech Stack
+Tech Stack:-
 
 
 Frontend: HTML, CSS, JavaScript (Simple UI, no heavy frameworks).
