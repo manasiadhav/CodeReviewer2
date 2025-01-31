@@ -4,6 +4,10 @@ import os
 
 app = Flask(__name__)
 
+@app.route("/")
+def home():
+    return render_template("index.html")
+
 # Initialize without API key first
 analyzer = CodeAnalyzer(api_key=None)
 
