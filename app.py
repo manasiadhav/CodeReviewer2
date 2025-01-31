@@ -3,13 +3,7 @@ from code_analyzer import CodeAnalyzer
 import os
 
 app = Flask(__name__)
-
-@app.route("/")
-def home():
-    return render_template("index.html")
-
-# Initialize without API key first
-analyzer = CodeAnalyzer(api_key=None)
+analyzer = CodeAnalyzer()
 
 ALLOWED_EXTENSIONS = {'py', 'js', 'cpp'}
 
@@ -34,29 +28,13 @@ def analyze_code():
             return jsonify({'error': 'Invalid file type'}), 400
 
         code_content = file.read().decode('utf-8')
-        
-        # For testing without API key
-        mock_result = {
-            'total_score': 85,
-            'breakdown': {
-                'efficiency': 90,
-                'readability': 85,
-                'security': 80,
-                'complexity': 85,
-                'error_handling': 85
-            },
-            'suggestions': [
-                'Consider adding more comments',
-                'Optimize the nested loops',
-                'Add input validation'
-            ]
-        }
-        return jsonify(mock_result)
+        analysis_result = analyzer.analyze_code(code_content)
+        return jsonify(analysis_result)
         
     except Exception as e:
         print(f"Error: {str(e)}")
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port, debug=True)
+    port = int(os.environ.get('PORT', 8080))
+    app.run(host='0.0.0.0', port=port)
