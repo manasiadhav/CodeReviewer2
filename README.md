@@ -1,97 +1,113 @@
-**🔍 AI-Powered Code Reviewer**:
+# 🧠 AI-Powered Code Reviewer
 
-Welcome to the AI-Powered Code Reviewer — a lightweight and intelligent web application that leverages AI to review your code and provide actionable insights. Whether you're a beginner seeking feedback or an experienced developer aiming to maintain clean, secure code, this tool gives you a breakdown of quality metrics, helpful suggestions, and a comprehensive score.
+A simple yet powerful web application that allows you to upload code files, analyze them using advanced AI (OpenAI GPT), and receive a quality score along with detailed suggestions for improvement.
 
-**🚀 Features**
+---
 
+## 🚀 Features
 
+- Upload multiple `.py`, `.js`, or `.cpp` files at once  
+-  Get AI-generated **code quality scores** for:
+  - Efficiency
+  - Readability
+  - Security
+  - Complexity
+  - Error Handling
+-  Receive **actionable suggestions** to improve your code
+-  Drag-and-drop UI with file previews
+-  (Coming Soon) Upload **code images** with OCR-based analysis
+-  Fully responsive and tested with various edge cases
 
-✅ Upload & Analyze Code Instantly
-Supported Languages: Python, JavaScript, and C++
+---
 
-Simple File Upload: Drag and drop or select your code files
+## 🛠️ Tech Stack
 
-Automatic Parsing: Code is securely sent for analysis using AI
+| Layer      | Technology       |
+|------------|------------------|
+| Frontend   | HTML, CSS, JavaScript |
+| Backend    | Flask (Python)   |
+| AI Engine  | OpenAI GPT API   |
+| Deployment | Vercel + GitHub  |
 
-**🧠 AI Code Analysis (via OpenAI API)**
-Evaluates uploaded code based on:
+---
 
-**Efficiency**
+## 📷 Screenshots
 
-Optimized loops, recursion, and algorithm usage
+> _Add these as image links after pushing to GitHub (optional)_
 
-Appropriate data structure selection
+- Upload Interface  
+- Score Breakdown per File  
+- AI Suggestions per File  
+- Multi-file Analysis UI
 
-**Readability**
+---
 
-Proper indentation
+## 🔧 Installation & Usage
 
-Descriptive variable and function names
+1. **Clone the repository**
+```bash
+git clone https://github.com/Ishaan2605/CodeReviewer
+cd CodeReviewer
+```
 
-Inline and block comments
+2. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
 
-**Security**
+3. **Run the application**
+```bash
+python app.py
+```
 
-Detection of insecure practices such as hardcoded credentials, SQL injection risks, and lack of input validation
+4. **Visit the app**
+```
+http://localhost:8080
+```
 
-Code Length & Complexity
+---
 
-Reviews for redundant code, deeply nested logic, and overall maintainability
+## 🖥️ Deployment
 
-**Error Handling**
+The project is deployed on **Vercel**. Visit:  
+🔗 [https://ai-code-review.vercel.app](#)
 
-Presence and quality of try-except blocks or condition checks
+---
 
-Graceful failure handling
+## 🔐 File Types Supported
 
-**📊 Scoring System**
-Overall Score: A single score out of 100 representing code quality
+- ✅ `.py`
+- ✅ `.js`
+- ✅ `.cpp`
 
-Breakdown: View detailed scoring per aspect (e.g., Efficiency: 85, Readability: 92)
+❌ Other formats like `.txt`, `.html`, etc. are **not supported**.
 
-**💡 AI-Suggested Improvements**
-Automatically receive improvement tips for low-score areas
+---
 
-Helps you learn better coding practices
+## 🧑‍💻 Contributors
 
-**🖼️ UI Preview**
-A clean, minimal interface built for performance and usability.
+| Name              | Role                        | GitHub                |
+|-------------------|-----------------------------|------------------------|
+| Ishaan Deshpande  | Frontend, README, Workflow  | [https://github.com/Ishaan2605](#)       |
+| Manasi Adhav      | Automation, Shell Scripts   | [https://github.com/manasiadhav](#)       |
+| Riya Gupta        | Testing, Suggestions Logic  | [(https://github.com/RiyaGupta122)](#)       |
 
-Fast, responsive, and distraction-free.
+---
 
-**🛠️ Tech Stack**
-Component	Technology
-Frontend	HTML, CSS, JavaScript
-Backend	Python (Flask)
-AI Integration	OpenAI API
-Deployment	Vercel
-**🧪 How It Works**
-User uploads a code file
+## 🧠 Coming Soon
 
-Flask backend reads the file and sends its contents to the OpenAI API
+- Code image upload + OCR support (via Tesseract)
+- PDF report download of code analysis
+- Dark mode
 
-**The API returns:**
+---
 
-A quality score
+## 📜 License
 
-A detailed breakdown
+This project is open-source under the [MIT License](LICENSE).
 
-Recommendations
+---
 
-The frontend displays the results in a clear, friendly format
+## 📩 Feedback
 
-**📁 Project Structure**
-
-ai-code-reviewer/
-
-├── static/                # CSS and JS files
-
-├── templates/             # HTML templates
-
-├── app.py                 # Flask backend
-
-├── utils.py               # Helper functions
-
-├── requirements.txt       # Python dependencies
-
-├── README.md              # You're here :)
+Have suggestions? Found a bug? Create an [issue](https://github.com/Ishaan2605/CodeReviewer/issues) or open a pull request!
