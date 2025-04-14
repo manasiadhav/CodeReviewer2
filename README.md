@@ -78,13 +78,17 @@ Recommendations
 The frontend displays the results in a clear, friendly format
 
 **📁 Project Structure**
-bash
-Copy
-Edit
+
 ai-code-reviewer/
+
 ├── static/                # CSS and JS files
+
 ├── templates/             # HTML templates
+
 ├── app.py                 # Flask backend
+
 ├── utils.py               # Helper functions
+
 ├── requirements.txt       # Python dependencies
+
 ├── README.md              # You're here :)
