@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 analyzer = CodeAnalyzer()
 
-ALLOWED_EXTENSIONS = {'py', 'js', 'cpp'}
+ALLOWED_EXTENSIONS = {'py', 'js', 'cpp','java', 'ts'}
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -25,7 +25,9 @@ def analyze_code():
             return jsonify({'error': 'No file selected'}), 400
         
         if not allowed_file(file.filename):
-            return jsonify({'error': 'Invalid file type'}), 400
+            allowed = ", ".join(ALLOWED_EXTENSIONS)
+            return jsonify({'error': f'Unsupported file type. Only {allowed} files are supported for analysis.'}), 400
+
 
         code_content = file.read().decode('utf-8')
         analysis_result = analyzer.analyze_code(code_content)
