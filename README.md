@@ -3,6 +3,7 @@
 Welcome to the AI-Powered Code Reviewer — a lightweight and intelligent web application that leverages AI to review your code and provide actionable insights. Whether you're a beginner seeking feedback or an experienced developer aiming to maintain clean, secure code, this tool gives you a breakdown of quality metrics, helpful suggestions, and a comprehensive score.
 
 **🚀 Features**
+
 ✅ Upload & Analyze Code Instantly
 Supported Languages: Python, JavaScript, and C++
 
