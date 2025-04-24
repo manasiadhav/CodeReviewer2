@@ -34,6 +34,11 @@ A simple yet powerful web application that allows you to upload code files, anal
 ## 📷 Screenshots
 
 > _Add these as image links after pushing to GitHub (optional)_
+![image](https://github.com/user-attachments/assets/4e5f1f69-1f90-4b81-9240-ac67681394fc)
+
+![image](https://github.com/user-attachments/assets/b471e666-241b-4d0a-9a14-0efc2a0ee121)
+
+![image](https://github.com/user-attachments/assets/0a3f2838-201a-43c2-ad56-c38847fb03aa)
 
 - Upload Interface  
 - Score Breakdown per File  
@@ -60,10 +65,6 @@ pip install -r requirements.txt
 python app.py
 ```
 
-4. **Visit the app**
-```
-http://localhost:8080
-```
 
 ---
 
